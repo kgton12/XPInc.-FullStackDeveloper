@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parking", "Parking\Parking.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hotel", "Hotel", "{7C561D9E-1916-48BE-A689-9397009179A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel", "Hotel\Hotel.csproj", "{5FADB7FD-B6DD-43F0-B281-1805F3A230E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel", "Hotel\Hotel.csproj", "{5FADB7FD-B6DD-43F0-B281-1805F3A230E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SmartPhone", "SmartPhone", "{126F19CF-48D1-4CA7-9D75-CF339A832B70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartPhone", "SmartPhone\SmartPhone.csproj", "{0913C310-BD71-4EED-BD41-6327EDF22FD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,10 @@ Global
 		{5FADB7FD-B6DD-43F0-B281-1805F3A230E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FADB7FD-B6DD-43F0-B281-1805F3A230E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FADB7FD-B6DD-43F0-B281-1805F3A230E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0913C310-BD71-4EED-BD41-6327EDF22FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0913C310-BD71-4EED-BD41-6327EDF22FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0913C310-BD71-4EED-BD41-6327EDF22FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0913C310-BD71-4EED-BD41-6327EDF22FD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3B348AEA-B9E7-4D56-A140-5A6451BF4D57} = {92F15184-527C-4033-AA18-362161B6E69C}
 		{5FADB7FD-B6DD-43F0-B281-1805F3A230E5} = {7C561D9E-1916-48BE-A689-9397009179A2}
+		{0913C310-BD71-4EED-BD41-6327EDF22FD0} = {126F19CF-48D1-4CA7-9D75-CF339A832B70}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0450A32A-1204-4E8B-BED4-FE495ADB24B4}
