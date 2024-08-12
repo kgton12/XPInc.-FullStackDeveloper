@@ -13,7 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel", "Hotel\Hotel.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SmartPhone", "SmartPhone", "{126F19CF-48D1-4CA7-9D75-CF339A832B70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartPhone", "SmartPhone\SmartPhone.csproj", "{0913C310-BD71-4EED-BD41-6327EDF22FD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartPhone", "SmartPhone\SmartPhone.csproj", "{0913C310-BD71-4EED-BD41-6327EDF22FD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingRelationalQueries", "BuildingRelationalQueries", "{AA991EA6-E1C1-46A8-BB21-128FA239F2D8}"
+	ProjectSection(SolutionItems) = preProject
+		ScriptMovies.sql = ScriptMovies.sql
+		SQLMovies.sql = SQLMovies.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
