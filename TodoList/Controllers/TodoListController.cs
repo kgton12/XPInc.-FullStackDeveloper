@@ -3,7 +3,6 @@ using TodoList.Context;
 using TodoList.Enuns;
 using TodoList.Models;
 using TodoList.UseCase;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace TodoList.Controllers
 {
@@ -24,7 +23,7 @@ namespace TodoList.Controllers
             catch (Exception ex)
             {
                 return NotFound(ex.Message);
-            }              
+            }
         }
 
         [HttpPut("{id}")]
@@ -113,7 +112,7 @@ namespace TodoList.Controllers
 
         [HttpPost]
         public async Task<IActionResult> PostTodo(TodoListEntity todoList)
-        {         
+        {
             try
             {
                 var response = await useCase.RegisterUseCase(todoList);
