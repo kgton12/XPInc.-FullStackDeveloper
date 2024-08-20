@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MinimalApi.Domain.DTOs;
 using MinimalApi.Domain.Entity;
 using MinimalApi.Domain.Interface;
 using MinimalApi.Infrastructure.DB;
@@ -29,10 +30,11 @@ namespace MinimalApi.Domain.Services
             return await query.Skip(skipCount).Take(itemsPerPage).ToListAsync();
         }
 
-        public async Task Create(Vehicle vehicle)
+        public async Task<Vehicle> Create(Vehicle vehicle)
         {
             _context.Vehicles.Add(vehicle);
             await _context.SaveChangesAsync();
+            return vehicle;
         }
 
         public async Task DeleteById(Vehicle vehicle)
@@ -50,6 +52,21 @@ namespace MinimalApi.Domain.Services
         {
             _context.Vehicles.Update(vehicle);
             await _context.SaveChangesAsync();
+        }
+        public ErrorsJson Validate(VehicleDTO vehicleDTO)
+        {
+            var errors = new ErrorsJson();
+
+            if (string.IsNullOrEmpty(vehicleDTO.Name))
+                errors.Message.Add("Name is required");
+
+            if (string.IsNullOrEmpty(vehicleDTO.Brand))
+                errors.Message.Add("Brand is required");
+
+            if (vehicleDTO.Year == 0)
+                errors.Message.Add("Year is required");
+
+            return errors;
         }
     }
 }

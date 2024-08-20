@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace MinimalApi.Domain.DTOs
+﻿namespace MinimalApi.Domain.DTOs
 {
     public class LoginDTO
     {
