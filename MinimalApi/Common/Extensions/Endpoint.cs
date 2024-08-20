@@ -1,4 +1,5 @@
-﻿using MinimalApi.Endpoints.Login;
+﻿using MinimalApi.Endpoints.Administrators;
+using MinimalApi.Endpoints.Login;
 using MinimalApi.Endpoints.Vehicles;
 
 namespace MinimalApi.Common.Extensions
@@ -18,6 +19,13 @@ namespace MinimalApi.Common.Extensions
                 .MapGroup("/login")
                 .WithTags("Login")
                 .MapEndpoint<LoginEndPoint>();
+
+            endpoints
+                .MapGroup("/Admin")
+                .WithTags("Admin")
+                .MapEndpoint<CreateAdministratorEndPoint>()
+                .MapEndpoint<GetAdministratorEndPoint>()
+                .MapEndpoint<GetAdministratorByIdEndPoint>();
 
             endpoints
                 .MapGroup("/vehicles")
