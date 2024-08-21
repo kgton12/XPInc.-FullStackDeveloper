@@ -27,15 +27,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList", "TodoList\TodoLi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MinimalApi", "MinimalApi", "{253F991C-A7CA-4078-9057-7EC45700842E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalApi", "MinimalApi\MinimalApi.csproj", "{806B2445-4172-4E67-AD13-DA812612ED2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalApi", "MinimalApi\Src\MinimalApi.csproj", "{806B2445-4172-4E67-AD13-DA812612ED2C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CalculatingAssets", "CalculatingAssets", "{1E865531-E806-42EE-AA97-C3D82F18E00D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatingAssets", "CalculatingAssets\CalculatingAssets.csproj", "{6A1E6AC1-4FC2-444B-9044-C42E71F7A3CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatingAssets", "CalculatingAssets\CalculatingAssets.csproj", "{6A1E6AC1-4FC2-444B-9044-C42E71F7A3CA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VolatilityAnalysisOfAnAsset", "VolatilityAnalysisOfAnAsset", "{91581861-30E8-4612-942E-54B047E326EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VolatilityAnalysisOfAnAsset", "VolatilityAnalysisOfAnAsset\VolatilityAnalysisOfAnAsset.csproj", "{8D45DF33-6EA3-4824-9718-4DAF5A654577}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolatilityAnalysisOfAnAsset", "VolatilityAnalysisOfAnAsset\VolatilityAnalysisOfAnAsset.csproj", "{8D45DF33-6EA3-4824-9718-4DAF5A654577}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApi.Test", "MinimalApi\Test\MinimalApi.Test\MinimalApi.Test.csproj", "{77D70BC2-13D7-4F4E-8E59-C8CC78C0B782}"
+	ProjectSection(ProjectDependencies) = postProject
+		{806B2445-4172-4E67-AD13-DA812612ED2C} = {806B2445-4172-4E67-AD13-DA812612ED2C}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +76,10 @@ Global
 		{8D45DF33-6EA3-4824-9718-4DAF5A654577}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D45DF33-6EA3-4824-9718-4DAF5A654577}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D45DF33-6EA3-4824-9718-4DAF5A654577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77D70BC2-13D7-4F4E-8E59-C8CC78C0B782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D70BC2-13D7-4F4E-8E59-C8CC78C0B782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D70BC2-13D7-4F4E-8E59-C8CC78C0B782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D70BC2-13D7-4F4E-8E59-C8CC78C0B782}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +92,7 @@ Global
 		{806B2445-4172-4E67-AD13-DA812612ED2C} = {253F991C-A7CA-4078-9057-7EC45700842E}
 		{6A1E6AC1-4FC2-444B-9044-C42E71F7A3CA} = {1E865531-E806-42EE-AA97-C3D82F18E00D}
 		{8D45DF33-6EA3-4824-9718-4DAF5A654577} = {91581861-30E8-4612-942E-54B047E326EC}
+		{77D70BC2-13D7-4F4E-8E59-C8CC78C0B782} = {253F991C-A7CA-4078-9057-7EC45700842E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0450A32A-1204-4E8B-BED4-FE495ADB24B4}

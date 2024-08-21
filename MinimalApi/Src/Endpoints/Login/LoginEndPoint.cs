@@ -44,8 +44,9 @@ namespace MinimalApi.Endpoints.Login
 
             var claims = new List<Claim>
                 {
-                    new(ClaimTypes.Email, administrator.Email),
+                    new("Email", administrator.Email),
                     new("Perfil", administrator.Profile),
+                    new(ClaimTypes.Role, administrator.Profile)
                 };
 
             var token = new JwtSecurityToken(

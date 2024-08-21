@@ -1,11 +1,7 @@
-﻿using Microsoft.IdentityModel.Tokens;
-using MinimalApi.Domain.Entity;
+﻿using Microsoft.AspNetCore.Authorization;
 using MinimalApi.Endpoints.Administrators;
 using MinimalApi.Endpoints.Login;
 using MinimalApi.Endpoints.Vehicles;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 
 namespace MinimalApi.Common.Extensions
 {
@@ -31,6 +27,7 @@ namespace MinimalApi.Common.Extensions
                 .MapGroup("/Admin")
                 .WithTags("Admin")
                 .RequireAuthorization()
+                .RequireAuthorization(new AuthorizeAttribute { Roles = "Adm" })
                 .MapEndpoint<CreateAdministratorEndPoint>()
                 .MapEndpoint<GetAdministratorEndPoint>()
                 .MapEndpoint<GetAdministratorByIdEndPoint>();
@@ -39,6 +36,7 @@ namespace MinimalApi.Common.Extensions
                 .MapGroup("/vehicles")
                 .WithTags("Vehicles")
                 .RequireAuthorization()
+                .RequireAuthorization(new AuthorizeAttribute { Roles = "Adm, Editor" })
                 .MapEndpoint<CreateVehicleEndPoint>()
                 .MapEndpoint<GetVehicleEndPoint>()
                 .MapEndpoint<GetVehicleByIdEndPoint>();
