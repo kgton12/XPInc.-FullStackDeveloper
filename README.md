@@ -25,13 +25,6 @@ Este projeto calcula a volatilidade de um ativo financeiro.
 - **Localização**: [CalculatingAssets](CalculatingAssets)
 - **Arquivo Principal**: [Program.cs](CalculatingAssets/Program.cs)
 
-### Calculator.React
-
-Este projeto é uma calculadora desenvolvida com React.
-
-- **Localização**: [Calculator.React](Calculator.React)
-- **Arquivo Principal**: [package.json](Calculator.React/Calculator.React/package.json)
-
 ### Hotel
 
 Este projeto gerencia a reserva de suítes e hóspedes em um hotel.
