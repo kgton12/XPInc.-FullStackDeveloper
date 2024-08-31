@@ -1,26 +1,6 @@
-# Hotel e Estacionamento
+# XPInc. Full Stack Developer Solution
 
-Este projeto é uma aplicação de console que gerencia reservas de hotel e estacionamento de veículos. Ele permite cadastrar hóspedes, suítes, veículos e calcular valores de diárias e estacionamento.
-
-## Estrutura do Projeto
-
-### Hotel
-
-- **Models/Reserve.cs**
-  - `CreatePerson()`: Cria uma nova pessoa solicitando o nome e sobrenome.
-  - `RegisterHosting()`: Registra a quantidade de diárias.
-  - `CalculateDailyRate()`: Calcula o valor da diária com base na quantidade de dias reservados.
-  - `AddSuite()`: Adiciona uma nova suíte solicitando nome, capacidade e valor da diária.
-  - `GetNumberOfGuests()`: Exibe o número de hóspedes na suíte.
-  - `AddGuest()`: Adiciona um novo hóspede à suíte, se houver capacidade.
-
-### Estacionamento
-
-- **Models/VehicleParking.cs**
-  - `LoadMenu()`: Exibe o menu de opções para o estacionamento.
-  - `Register()`: Registra um novo veículo solicitando a placa.
-  - `List()`: Lista todos os veículos estacionados.
-  - `Unregister()`: Remove um veículo do estacionamento solicitando a placa e o tempo de permanência.
+Este repositório contém vários projetos desenvolvidos como parte do curso de Full Stack Developer da XPInc. Cada projeto aborda diferentes aspectos do desenvolvimento de software, desde a criação de APIs até testes unitários e desenvolvimento de aplicativos móveis.
 
 ## Como Executar
 
@@ -29,22 +9,82 @@ Este projeto é uma aplicação de console que gerencia reservas de hotel e esta
 3. Compile e execute o projeto.
 4. Siga as instruções exibidas no console para interagir com o sistema.
 
-## Funcionalidades
+## Projetos
+
+### BuildingRelationalQueries
+
+Este projeto contém scripts SQL para construção de consultas relacionais.
+
+- **Localização**: [BuildingRelationalQueries](BuildingRelationalQueries)
+- **Arquivos Principais**: [ScriptMovies.sql](BuildingRelationalQueries/ScriptMovies.sql), [SQLMovies.sql](BuildingRelationalQueries/SQLMovies.sql)
+
+### CalculatingAssets
+
+Este projeto calcula a volatilidade de um ativo financeiro.
+
+- **Localização**: [CalculatingAssets](CalculatingAssets)
+- **Arquivo Principal**: [Program.cs](CalculatingAssets/Program.cs)
+
+### Calculator.React
+
+Este projeto é uma calculadora desenvolvida com React.
+
+- **Localização**: [Calculator.React](Calculator.React/Calculator.React)
+- **Arquivo Principal**: [package.json](Calculator.React/Calculator.React/package.json)
 
 ### Hotel
 
-- **Cadastrar Hóspede**: Permite cadastrar um novo hóspede.
-- **Registrar Diárias**: Permite registrar a quantidade de diárias.
-- **Calcular Valor da Diária**: Calcula o valor total da estadia com base nas diárias.
-- **Adicionar Suíte**: Permite adicionar uma nova suíte ao sistema.
-- **Exibir Número de Hóspedes**: Exibe o número de hóspedes na suíte.
-- **Adicionar Hóspede à Suíte**: Adiciona um hóspede à suíte, se houver capacidade.
+Este projeto gerencia a reserva de suítes e hóspedes em um hotel.
 
-### Estacionamento
+- **Localização**: [Hotel](Hotel)
+- **Arquivo Principal**: [Program.cs](Hotel/Program.cs)
 
-- **Cadastrar Veículo**: Permite cadastrar um novo veículo.
-- **Listar Veículos**: Lista todos os veículos estacionados.
-- **Remover Veículo**: Remove um veículo do estacionamento e calcula o valor a ser pago.
+### MinimalApi
+
+Este projeto demonstra a criação de uma API mínima com .NET.
+
+- **Localização**: [MinimalApi](MinimalApi)
+- **Arquivo Principal**: [appsettings.Development.json](MinimalApi/Src/appsettings.Development.json)
+
+### Parking
+
+Este projeto gerencia o estacionamento de veículos.
+
+- **Localização**: [Parking](Parking)
+- **Arquivo Principal**: [Program.cs](Parking/Program.cs)
+
+### SmartPhone
+
+Este projeto simula o funcionamento de smartphones.
+
+- **Localização**: [SmartPhone](SmartPhone)
+- **Arquivo Principal**: [Program.cs](SmartPhone/Program.cs)
+
+### TDDAndUnitTesting
+
+Este projeto contém exemplos de Test-Driven Development (TDD) e testes unitários.
+
+- **Localização**: [TDDAndUnitTesting](TDDAndUnitTesting)
+
+### TodoList
+
+Este projeto é uma aplicação de lista de tarefas com suporte a operações CRUD.
+
+- **Localização**: [TodoList](TodoList)
+- **Arquivo Principal**: [TodoListController.cs](TodoList/Controllers/TodoListController.cs)
+
+### UnitTestingChallenge
+
+Este projeto contém desafios de testes unitários.
+
+- **Localização**: [UnitTestingChallenge](UnitTestingChallenge)
+
+### VolatilityAnalysisOfAnAsset
+
+Este projeto analisa a volatilidade de um ativo financeiro.
+
+- **Localização**: [VolatilityAnalysisOfAnAsset](VolatilityAnalysisOfAnAsset)
+- **Arquivo Principal**: [Program.cs](VolatilityAnalysisOfAnAsset/Program.cs)
 
 ## Contribuição
 
