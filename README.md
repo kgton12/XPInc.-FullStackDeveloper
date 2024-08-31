@@ -29,7 +29,7 @@ Este projeto calcula a volatilidade de um ativo financeiro.
 
 Este projeto é uma calculadora desenvolvida com React.
 
-- **Localização**: [Calculator.React](Calculator.React/Calculator.React)
+- **Localização**: [Calculator.React](Calculator.React)
 - **Arquivo Principal**: [package.json](Calculator.React/Calculator.React/package.json)
 
 ### Hotel
